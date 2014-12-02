@@ -13,7 +13,7 @@ public class Client implements ActionListener{
 	void showUI(){
 		try{
 			stub = (FactI)Naming.lookup("rmi://localhost/fact")
-			frame=new JFrame("Factorial GUI");
+			frame=new JFrame("NPR NCR GUI");
 			GridLayout gl=new GridLayout(3,2);
 			frame.setLayout(gl);
 			n = new JTextField();
@@ -44,7 +44,7 @@ public class Client implements ActionListener{
 			int rval = Integer.parseInt(r.getText());
 			int ncr = stub.factorial(nval)/(stub.factorial(rval)*stub.factorial(nval-rval));
 			int npr = stub.factorial(nval)/(stub.factorial(nval-rval));
-			resLabel.setText("<center>NPR : "+npr + "<br/>NCR : " + ncr + "</center>");
+			resLabel.setText("\t\tNPR : " + npr + "\n\t\tNCR : " + ncr);
 			}
 		catch(Exception e){
 		}
