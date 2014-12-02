@@ -43,7 +43,8 @@ public class Client implements ActionListener{
 			int nval = Integer.parseInt(n.getText());
 			int rval = Integer.parseInt(r.getText());
 			int ncr = stub.factorial(nval)/(stub.factorial(rval)*stub.factorial(nval-rval));
-			resLabel.setText("ans : "+ncr);
+			int npr = stub.factorial(nval)/(stub.factorial(nval-rval));
+			resLabel.setText("<center>NPR : "+npr + "<br/>NCR : " + ncr + "</center>");
 			}
 		catch(Exception e){
 		}
