@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>Survey</title>
+		<style>
+			body{
+				background: #250C00;
+			}
+			#heading{
+				color:#ffffff;
+				font-style: oblique;
+			}
+			.aligncenter{
+				margin:auto;
+				padding:5px;
+			}
+			.lb{
+				width:80%;
+				float: left;
+				color:#ffffff;
+				margin-left: 200px;
+			}
+			.lb1{
+				color:#ffffff;
+			}
+			.ip{
+				width:30%;
+				float: right;
+				color:#ffffff;
+				border-color: #D2691E;
+				background: transparent;
+				margin-right: 200px;
+			}
+			#sbmt{
+				color:#ffffff;
+				border-color: #D2691E;
+				background: transparent;
+				margin-top: 100px;
+			}
+			a{
+				color:#ffffff;
+			}
+			#summary{
+				color:#ffffff;
+				border-color: #D2691E;
+				background: rgba(184, 182, 216, 0.35);
+				margin:auto;
+				box-shadow: 5px 5px 5px #888888;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="aligncenter" style="width:60%;">
+		<h1 id="heading"><center>Higher Studies Survey</center></h1>
+		<br/><hr style="width:80%; color:#D2691E"/><br/>
+			<form action="pl.pl" method="post" class="aligncenter" style="width:100%;">
+			<p class="lb">Name
+			<input type="text" class="ip" name="name" required/></p>
+			<p class="lb">Roll
+			<input type="text" class="ip" name="roll" required/></p>
+			<p class="lb">Question</p>
+			<center>
+			<div style="margin:auto;">
+				<label class="lb1">option 1</label>
+				<input type="radio"  name="sub" value="o1" required/>
+				<label class="lb1">option 2</label>
+				<input type="radio"  name="sub" value="o2" required/>
+				<label class="lb1">option 3</label>
+				<input type="radio"  name="sub" value="o3" required/>
+			</div>
+			</center>
+			<br/>
+			<center>
+				<input type="submit" id="sbmt" name="sbmt" value="Submit"/>
+			</center>
+			</form>';
+		</div>
+	</body>
+</html>
