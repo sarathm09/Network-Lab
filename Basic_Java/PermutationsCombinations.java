@@ -20,14 +20,14 @@ class PermutationsCombinations{
 		else{
 			System.out.println("Enter r : ");
 			r = Integer.parseInt(in.readLine());
-		if( r<=n ){
-			System.out.println("Ncr = " + (fact(n)/ (fact(n-r) * fact(r)) ) );
-			System.out.println("Npr = " + (fact(n)/(fact(n-r))) );
-			}
-		else{
-			System.out.println("r is not less than n");
+			if( r<=n ){
+				System.out.println("Ncr = " + (fact(n)/ (fact(n-r) * fact(r)) ) );
+				System.out.println("Npr = " + (fact(n)/(fact(n-r))) );
+				}
+			else{
+				System.out.println("r is not less than n");
+				}   
 			}   
-		}   
-	}                
-}
+		}                
+	}
 
